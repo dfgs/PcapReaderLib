@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcapReaderLib", "PcapReaderLib\PcapReaderLib.csproj", "{ED8B8DB3-AA8C-46B8-8AA4-1C0A07A2205C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcapReaderLib.UnitTest", "PcapReaderLib.UnitTest\PcapReaderLib.UnitTest.csproj", "{5760F69D-2174-4378-B6B9-EDC762666829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED8B8DB3-AA8C-46B8-8AA4-1C0A07A2205C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8B8DB3-AA8C-46B8-8AA4-1C0A07A2205C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8B8DB3-AA8C-46B8-8AA4-1C0A07A2205C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8B8DB3-AA8C-46B8-8AA4-1C0A07A2205C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5760F69D-2174-4378-B6B9-EDC762666829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5760F69D-2174-4378-B6B9-EDC762666829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5760F69D-2174-4378-B6B9-EDC762666829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5760F69D-2174-4378-B6B9-EDC762666829}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F67C2D23-1FCA-46F6-B643-BA17D630708E}
+	EndGlobalSection
+EndGlobal
