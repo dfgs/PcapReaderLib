@@ -58,6 +58,18 @@ namespace PcapReaderLib
 
 		}
 
+		public DateTime GetTimeTimeUTC(PacketRecord Record )
+		{
+			ArgumentNullException.ThrowIfNull(Record);
+
+			switch(MagicNumber)
+			{
+				case 0xA1B2C3D4:return new DateTime(1970, 1, 1).AddSeconds(Record.TimestampSeconds).AddMicroseconds(Record.TimestampMicroOrNanoSeconds);
+				case 0xA1B23C4D:return new DateTime(1970, 1, 1).AddSeconds(Record.TimestampSeconds).AddMicroseconds(Record.TimestampMicroOrNanoSeconds*1000);
+			}
+
+			throw new InvalidDataException("Invalid magic number");
+		}
 
 
 

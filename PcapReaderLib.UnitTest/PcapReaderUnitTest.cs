@@ -46,6 +46,7 @@ namespace PcapReaderLib.UnitTest
 		public void ReadHRecordShouldReturnValidRecord(string ResourceName)
 		{
 			PacketRecord? record;
+			FileHeader header;
 			IPcapReader reader;
 
 			reader = new PcapReader();
@@ -56,7 +57,7 @@ namespace PcapReaderLib.UnitTest
 				{
 
 					// skip header
-					reader.ReadHeader(binaryReader);
+					header=reader.ReadHeader(binaryReader);
 
 					record = reader.ReadPacketRecord(binaryReader);
 
@@ -66,6 +67,7 @@ namespace PcapReaderLib.UnitTest
 					Assert.AreEqual<UInt32>(786, record.CapturedPacketLength);
 					Assert.AreEqual<UInt32>(786, record.OriginalPacketLength);
 					Assert.AreEqual(786, record.PacketData.Length);
+					Assert.AreEqual(new DateTime(2024,3,22,8,38,45,145,911), header.GetTimeTimeUTC(record));
 				}
 			}
 
